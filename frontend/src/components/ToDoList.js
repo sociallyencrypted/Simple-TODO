@@ -21,14 +21,14 @@ function ToDoList({ listId, handleBackButton }) {
       label: label,
     });
     setListData(await response.data);
-  }
+  };
 
   const deleteItem = async (id) => {
     const response = await axios.delete(
       `/api/lists/${listData.id}/items/${id}`
     );
     setListData(await response.data);
-  }
+  };
 
   const toggleCheck = async (itemId, newState) => {
     const response = await axios.patch(
@@ -39,7 +39,7 @@ function ToDoList({ listId, handleBackButton }) {
       }
     );
     setListData(await response.data);
-  }
+  };
 
   if (listData === null) {
     return (
@@ -63,9 +63,7 @@ function ToDoList({ listId, handleBackButton }) {
           <input id={labelRef} type="text" />
         </label>
         <button
-          onClick={() =>
-            createNewItem(document.getElementById(labelRef).value)
-          }
+          onClick={() => createNewItem(document.getElementById(labelRef).value)}
         >
           New
         </button>
