@@ -1,0 +1,7 @@
+aiostream==0.6.3
+fastapi==0.115.2
+motor==3.6.0
+pymongo==4.9.2
+python-dotenv==1.0.1
+uvicorn==0.31.1
+
