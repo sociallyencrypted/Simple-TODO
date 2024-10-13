@@ -22,7 +22,7 @@ The frontend is built with React, utilizing hooks for state management and Axios
    ```
 
 2. **Set Up Environment Variables**
-   Create a `.env` file in the `backend` directory with the following content:
+   Create a `.env` file in the root directory with the following content:
    ```env
    MONGODB_URI=<your_mongodb_connection_string>
    DEBUG=true
